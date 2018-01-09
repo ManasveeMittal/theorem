@@ -1,0 +1,175 @@
+#date = 20170109
+#author - manasvee
+
+manavee@HP:~/anaconda3/lib/python3.6/site-packages/google$ cd
+manavee@HP:~$ git clone git@github.com:ManasveeMittal/theorem.git
+Cloning into 'theorem'...
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+manavee@HP:~$ git status 
+fatal: Not a git repository (or any of the parent directories): .git
+manavee@HP:~$ l
+anaconda3/  Downloads/  dump_R1/    Music/      Public/
+Desktop/    Dropbox/    hp.key      nltk_data/  Templates/
+Documents/  Dump/       hp.key.pub  Pictures/   Videos/
+manavee@HP:~$ git clone https://github.com/ManasveeMittal/theorem.git
+Cloning into 'theorem'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+Checking connectivity... done.
+manavee@HP:~$ cd
+cd                 cd-fix-profile     cd-it8
+cd-create-profile  cd-iccdump         
+manavee@HP:~$ cd 
+.adobe/             Dropbox/            .mozilla/
+.anaconda/          .dropbox-dist/      Music/
+anaconda3/          Dump/               .nano/
+.astropy/           dump_R1/            nltk_data/
+.cache/             .gconf/             Pictures/
+.compiz/            .gnome/             .pki/
+.conda/             .gnupg/             Public/
+.config/            .gvfs/              .ssh/
+.continuum/         .ipynb_checkpoints/ Templates/
+.dbus/              .ipython/           .theano/
+Desktop/            .jupyter/           theorem/
+Documents/          .keras/             .thunderbird/
+Downloads/          .local/             Videos/
+.dropbox/           .macromedia/        
+manavee@HP:~$ cd theorem/
+manavee@HP:~/theorem$ l
+LICENSE
+manavee@HP:~/theorem$ l
+LICENSE
+manavee@HP:~/theorem$ L
+L: command not found
+manavee@HP:~/theorem$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+manavee@HP:~/theorem$ git pull
+Already up-to-date.
+manavee@HP:~/theorem$ touch z
+manavee@HP:~/theorem$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	z
+
+nothing added to commit but untracked files present (use "git add" to track)
+manavee@HP:~/theorem$ git pull
+Already up-to-date.
+manavee@HP:~/theorem$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	z
+
+nothing added to commit but untracked files present (use "git add" to track)
+manavee@HP:~/theorem$ git add z
+manavee@HP:~/theorem$ git commit -m 'test'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'manavee@HP.(none)')
+manavee@HP:~/theorem$ ^C
+manavee@HP:~/theorem$ git config --global user.email manasvee.k@outlook.com
+manavee@HP:~/theorem$ git config --global user.name 'HP_15_Ubuntu_16_R1"
+> 
+> ^C
+manavee@HP:~/theorem$ git config --global user.name 'HP_15_Ubuntu_16_R1"
+> ^C
+manavee@HP:~/theorem$ git config --global user.name 'HP_15_Ubuntu_16_R1"
+> ^C
+manavee@HP:~/theorem$ git config --global user.name 'HP_15_Linux_R1"
+> ^C
+manavee@HP:~/theorem$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   z
+
+manavee@HP:~/theorem$ git commit -m 'test'
+[master daee6eb] test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 z
+manavee@HP:~/theorem$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+manavee@HP:~/theorem$ git pull
+Already up-to-date.
+manavee@HP:~/theorem$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+manavee@HP:~/theorem$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': ^C
+manavee@HP:~/theorem$ git config  push.default simple
+manavee@HP:~/theorem$ git push
+Username for 'https://github.com': ManasveeMittal
+Password for 'https://ManasveeMittal@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ManasveeMittal/theorem.git/'
+manavee@HP:~/theorem$ ^C
+manavee@HP:~/theorem$ git config  push.default simple
+manavee@HP:~/theorem$ git push
+Username for 'https://github.com': HP_15_Ubuntu_16_R1
+Password for 'https://HP_15_Ubuntu_16_R1@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ManasveeMittal/theorem.git/'
+manavee@HP:~/theorem$ git config user.name "HP_15_Ubuntu_16_R1"
+manavee@HP:~/theorem$ git push
+Username for 'https://github.com': HP_15_Ubuntu_16_R1
+Password for 'https://HP_15_Ubuntu_16_R1@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ManasveeMittal/theorem.git/'
+manavee@HP:~/theorem$ git push
+Username for 'https://github.com': ^C
+manavee@HP:~/theorem$ git push
+

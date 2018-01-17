@@ -466,7 +466,7 @@ Other (without hypothesis testing):
 - See question 3
 18. How do you test whether a new credit risk scoring model works?
 
-    Test on a holdout set
+    Test on a holdou+t set
     Kolmogorov-Smirnov test
 
 Kolmogorov-Smirnov test:
@@ -478,7 +478,7 @@ Kolmogorov-Smirnov test:
 - Can be modified as a goodness of fit test
 - In our case: cumulative percentages of good, cumulative percentages of bad
 
-19. What is: collaborative filtering, n-grams, cosine distance?
+19. +What is: collaborative filtering, n-grams, cosine distance?
 
 Collaborative filtering:
 - Technique used by some recommender systems

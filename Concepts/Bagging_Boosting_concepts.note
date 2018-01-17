@@ -1,0 +1,153 @@
+Definition: The term ‘Boosting’ refers to a family of algorithms which converts weak learner(a.k.a. base learner) to strong rule/learners, thereby grants power to machine learning models to improve their accuracy of prediction.
+
+How:To convert weak learner to strong learner, we’ll combine the prediction of each weak learner using methods like:
+•   Using average/ weighted average
+•   Considering prediction has higher vote
+
+doubt:How boosting identify weak rules?
+	apply base learning (ML) algorithms with a different distribution
+		-How do we choose different distribution for each round?
+
+Types of Boosting Algorithms:
+	
+    AdaBoost (Adaptive Boosting) e.g http://scikit-learn.org/stable/auto_examples/ensemble/plot_adaboost_twoclass.html#sphx-glr-auto-examples-ensemble-plot-adaboost-twoclass-py
+    Gradient Tree Boosting
+    XGBoost
+
+AdaBoost: 
+	Visualization: https://www.analyticsvidhya.com/wp-content/uploads/2015/11/bigd.png
+	Python Code:
+		from sklearn.ensemble import AdaBoostClassifier #For Classification
+		from sklearn.ensemble import AdaBoostRegressor #For Regression
+		from sklearn.tree import DecisionTreeClassifier
+
+		dt = DecisionTreeClassifier() 
+		clf = AdaBoostClassifier(n_estimators=100, base_estimator=dt,learning_rate=1)
+		#Above I have used decision tree as a base estimator, you can use any ML learner as base estimator if it ac# cepts sample weight 
+		clf.fit(x_train,y_train)
+	Parameter Tuning:		
+    	n_estimators: It controls the number of weak learners.
+    	learning_rate:Controls the contribution of weak learners in the final combination. There is a trade-off between learning_rate and n_estimators.
+    	base_estimators: It helps to specify different ML algorithm.
+
+ Gradient Boosting:
+ 	What: training many model sequentially
+ 	How: Each new model gradually minimizes the loss function (y = ax + b + e, e needs special attention as it is an error term) of the whole system using Gradient Descent method
+ 		The learning procedure consecutively fit new models to provide a more accurate estimate of the response variable.
+ 	Algorithm Objective: construct new base learners which can be maximally correlated with negative gradient of the loss function, associated with the whole ensemble
+
+ 	Python Code:
+ 		from sklearn.ensemble import GradientBoostingClassifier #For Classification
+		from sklearn.ensemble import GradientBoostingRegressor #For Regression
+		clf = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, max_depth=1)
+		clf.fit(X_train, y_train)
+ 		
+ 	Parameter Tuning: 		
+    	n_estimators: It controls the number of weak learners.
+    	learning_rate:Controls the contribution of weak learners in the final combination. There is a trade-off between learning_rate and n_estimators.
+    	max_depth: maximum depth of the individual regression estimators. The maximum depth limits the number of nodes in the tree. Tune this parameter for best performance; the best value depends on the interaction of the input variables.
+
+
+Other Boosting Algorithms:
+	1. GentleBoost
+	
+	3.  LPBoost
+	
+	4. BrownBoost
+
+
+2. What are Bagging, Boosting and Stacking?
+Bagging (Bootstrap Aggregating):
+	is an ensemble method.
+	Steps:
+		First, we create random samples of the training data set (sub sets of training data set).
+		Then, we build a classifier for each sample.
+		Finally, results of these multiple classifiers are combined using average or majority voting
+	Significance: Bagging helps to reduce the variance error.
+	Visualization: https://www.analyticsvidhya.com/wp-content/uploads/2015/09/bagging.png
+
+Boosting:
+	Def: provide sequential learning of the predictors
+	Steps: The first predictor is learned on the whole data set, while the following are learnt on the training set based on the performance of the previous one.
+		   It starts by classifying original data set and giving equal weights to each observation.
+		   If classes are predicted incorrectly using the first learner, then it gives higher weight to the missed classified observation.
+		   Being an iterative process, it continues to add classifier learner until a limit is reached in the number of models or accuracy.
+		   Boosting has shown better predictive accuracy than bagging, but it also tends to over-fit the training data as well. 
+	Visualization: https://www.analyticsvidhya.com/wp-content/uploads/2015/09/boosting1.png
+
+Stacking 
+    Def:works in two phases. 
+    Steps:First, we use multiple base classifiers to predict the class.
+    	  Second, a new learner is used to combine their predictions with the aim of reducing the generalization error. 
+
+    Visualization:https://www.analyticsvidhya.com/wp-content/uploads/2015/09/stacking-297x300.png
+
+4. How can we identify the weights of different models for ensemble?
+There are various methods to find the optimal weight for combining all base learners. 
+
+Naive approach:In general, we assume equal weight for all models and takes the average of predictions
+>Find the collinearity between base learners and based on this table, then identify the base models to ensemble. 
+ After that look at the cross validation score (ratio of score) of identified base models to find the weight.
+>Find the algorithm to return the optimal weight for base learners
+ https://www.analyticsvidhya.com/blog/2015/08/optimal-weights-ensemble-learner-neural-network/
+
+ We can also solve the same problem using methods like:
+
+    Forward Selection of learners
+    Selection with Replacement
+    Bagging of ensemble methods
+
+
+
+
+
+
+
+
+
+
+5. What are the benefits of ensemble model?
+
+There are two major benefits of Ensemble models:
+
+    Better prediction
+    More stable model
+
+	How?
+		The aggregate opinion of a multiple models is less noisy than other models. In finance, we called it “Diversification”  a mixed portfolio of many stocks will be much less variable than just one of the stocks alone
+	Caution: ensemble models are over fitting although bagging takes care of it largely.
+
+
+    What is an ensemble model?
+    What are bagging, boosting and stacking?
+    Can we ensemble multiple models of same ML algorithm?
+    How can we identify the weights of different models?
+    What are the benefits of ensemble model?
+
+
+
+--Trivia--
+1. What is an Ensemble Model?
+How would you classify an email as SPAM or not? Like everyone else, our initial approach would be to identify ‘spam’ and ‘not spam’ emails using following criteria. If:
+Let’s try to understand it by solving a classification challenge.
+
+Solution: We can generate various rules for classification of spam emails, let’s look at the some of them:
+
+    Spam
+        Have total length less than 20 words
+        Have only image (promotional images)
+        Have specific key words like “make money and grow” and “reduce your fat”
+        More miss spelled words in the email
+    Not Spam
+        Email from Analytics Vidhya domain
+        Email from family members or anyone from e-mail address book
+
+Above, I’ve listed some common rules for filtering the SPAM e-mails. Do you think that all these rules individually can predict the correct class?
+
+Most of us would say no – And that’s true! Combining these rules will provide robust prediction as compared to prediction done by individual rules. This is the principle of Ensemble Modeling. Ensemble model combines multiple ‘individual’ (diverse) models together and delivers superior prediction power.
+
+
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.datasets import make_gaussian_quantiles
+np.ndarray = np.concatenate((a1, a2, ...), axis=0) #Join a sequence of arrays along an existing axis.

@@ -26,7 +26,7 @@ def col_summary(col_name): #this i am doing currently
   	from pandas.api.types import is_numeric_dtype, is_string_dtype
     col = df[col_name]
     TotalRows = len(df)
-    TotalUniqueLevels = col.nunique()
+    TotalUniqueLevels = col.nunique()	
     PercentUniqueValues = TotalUniqueLevels/TotalRows
     TotalNullValues = col.isnull().sum()
     PercentNullValues = TotalNullValues/TotalRows
@@ -56,3 +56,7 @@ def col_summary(col_name): #this i am doing currently
 
 def get_unique_count(x):
     return len(np.unique(x))
+
+def combine_datasets(l,ignore_index=True ):
+	"""combine dataframes in list l"""
+	return pd.concat(l,ignore_index=ignore_index)

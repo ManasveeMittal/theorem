@@ -1,0 +1,235 @@
+
+digitalvidya.com
+Top 30 Data Analytics Interview Questions & Answers
+Jasleen Kaur
+12-15 minutes
+
+The world has gone digital and there are a lot of jobs on analytics. This has increased the demand for careers in data science, data analytics, programming, and others. Before you think of getting a job in any of these fields, you need the necessary qualifications in the respective areas of specialization.
+
+If you intend to be a data scientist and have the necessary qualifications, then the only thing between you and your dream job is an interview. For you to land that job, you need to answer data analytics interview questions. There are so many questions that can be asked and it is very important that you know how to answer them. Such interview questions on data analytics can be interview questions for freshers or interview questions for experienced persons. Whichever way it goes you need to be highly prepared.
+Top Data Analytics Interview Questions & Answersdata analytics interview
+
+Here are top 30 data analysis questions and answers:Top Data Analytics Interview Questions_Infographic
+
+    What are the responsibilities of a Data Analyst?
+
+Answer:  To answer this question, you need to know that such responsibilities include:
+
+    Interpret data and analyze results by using techniques of statistics and give reports.
+    Look out for new areas or processes to improve opportunities.
+    Get data from various sources (primary and secondary) and keep the systems running.
+    Filter data from various sources and go through computer reports.
+    Make sure all data analysis gets support and makes sure customers and staff relate well
+
+    What are the requirements needed for becoming a data analyst?
+
+Answer: This is one of the most commonly asked data analyst interview questions. Listed below are the requirements needed for becoming a data analyst: 
+
+    Sound knowledge of statistical packages used in analyzing big datasets like Excel, SAS, SPSS and many others
+    Very good knowledge of the programming language (Javascript, ETL frameworks or XML), reporting packages (Business Objects) and databases.
+    Strong technical knowledge in areas like data models, segmentation techniques, data mining and database design
+    Good skills in knowing how to run analysis, organization, collection and dissemination of big data accurately
+
+    What steps are in an analytics project?
+
+Answer: The steps involved in an analysis project can be listed as:
+
+    Problem identification
+    Exploration of data
+    Preparation of data
+    Modeling
+    Data Validation
+    Implementation and tracking
+
+Data Analytics Course by Digital Vidya
+
+Free Data Analytics Webinar
+Date: 18th Jan, 2018 (Thursday)
+Time: 3 PM to 4 PM (IST/GMT +5:30)
+
+    Define Data Cleansing.
+
+Answer:  When answering this question, you should know that the definition of data cleansing is:
+
+Data cleansing (also known as data cleaning) involves a data analyst discovering and eliminating errors and irregularities from the database to enhance data quality.
+
+    What are the best practices for data cleaning?
+
+Answer: 
+
+    Separate data depending on their attributes
+    In the case of massive datasets, do a stepwise cleansing and improve on the data on every step until the data quality is good.
+    For common data cleansing, you need to generate a set of scripts which include blanking out every value not matching a regex.
+    Do analysis on the statistic for every column.
+    Stay up to date with all cleaning operations, so changes could make when necessary.
+
+    State a few of the best tools useful for data analytics.
+
+Answer: Some of the best tools useful for data analytics are: KNIME, Tableau, OpenRefine, io, NodeXL, Solver, etc.
+
+    Describe Logic Regression.
+
+Answer:  Logic Regression can be defined as:
+
+This is a statistical method of examining a dataset having one or more variables that are independent defining an outcome.
+
+    Mention the difference between data profiling and data mining.
+
+Answer: The difference between data profiling and data mining is:
+
+Data Profiling is aimed at individual attributes’ analysis. Information on different attributes like discrete values, value ranges and their data type, frequency, length are gotten from it. Data mining, on the other hand, targets unusual records detection, cluster analysis, sequence discovery and others.
+
+    What is the name of the framework that Apache developed for processing massive dataset for an application in a computing environment that is distributed?
+
+Answer:  The framework that was developed by Apache for processing massive dataset are:
+
+Hadoop and MapReduce.
+
+    What are the usual challenges a data analyst normally encounter?
+
+Answer: Amongst the interview questions for data analyst, challenges faced is a sure-shot question put up by the interviewer. Here are a few challenges:
+
+    Illegal values
+    Duplicate entries
+    Trying to identify data that is overlapping
+    Regular misspelling
+    Irregular value misrepresentation
+
+Data analytics interview questions can come in various manners. There are data analytics interview questions for freshers and data analytics interview questions for experienced. Whichever ones apply to your present situation, make sure you are fully prepared.
+
+    Describe KNN imputation method.
+
+Answer: The answer to this question is: In this method, the attribute values that are missing are imputed by making use of the values closest to those attributes that have missing values. If you use a distance function, you can determine the similarity of the two attributes.
+
+    What are the generally observed missing patterns?
+
+Answer: The answers for this question are: Missing at random, missing depending on unobserved input variable, missing depending on the value that s missing and missing completely at random.
+
+    What ought to be done with suspected or missing data?
+
+Answer:
+
+    A validation report giving information of any suspected data should be prepared. Information like failed validation criteria and occurrence time and date should be stated.
+    Personnel who are experienced should analyze data that suspicious in order to determine if they are acceptable.
+    Any invalid data should be removed and a validation code should replace it.
+    When working on missing data the best analyses strategies like model based methods, deletion method, etc. should be used.
+
+    What methods of validation are used by data analysts?
+
+Answer: The answers for this question are: Data verification and data mining.
+
+    Describe an Outliner.
+
+Answer:  This concept is a regularly used term by data analyst when referring to a value appearing very far and diverging away from a pattern in a sample. We have two types – Univariate and Multivariate.data-analyst-interview-questions
+
+    How can you deal with multi-source problems?
+
+Answer: To answer this question, you need to know that you have to:
+
+    Identify all records that are similar and put them together into a single record that contains the necessary attributes having no redundancy.
+    Restructure schemas in order to achieve schema integration
+
+    Define K-mean Algorithm. 
+
+Answer: This is a very popular partitioning method where objects are classified into K groups. The clusters can be said to be spherical in the K-mean algorithm, the data points a centered around a cluster while their variance is similar.
+
+    Hierarchical Clustering Algorithm is known to be?
+
+Answer: An algorithm that combines and divides groups already existing to create a hierarchical structure showcasing the manner at which these groups are merged or divided.
+
+    Give an explanation of collaborative filtering.
+
+Answer:  Collaborative filtering can be said to be a simple algorithm used for creating a recommendation system that depends on the behavioral data of the user.
+
+    List the key skills a data analyst needs.
+
+Answer: To answer this question, you should know that the skills needed are:
+
+Predictive analytics, Database Knowledge, Presentation skills and Predictive analytics.
+
+Interview questions on data analytics can pop out from any area so it is expected that you must have covered almost every part of the field. Whether you have a degree or certification, you should have no difficulties in answering data analytics interview question.
+
+Here are another set of data analytics interview questions:
+
+    List some tools used for Big Data.
+
+Answer: This is another good question and some of the tools used are Mahout, Pig, Flume, Hive, Sqoop and Hadoop.
+
+    Describe Map Reduce.
+
+Answer:  Map Reduce can be described as:
+
+This is a framework used for processing massive data sets, cutting them down into subsets then processing the subsets on a distinct server then the results obtained are blended.
+
+    Briefly Explain KPI, 80/20 rules and design of experiments.
+
+Answer:  KPI – means Key Performance Indicator. It consists different combinations of reports, spreadsheets or charts about the whole business process.
+
+80/20 Rules – This means that you get 80 percent of your income from 20 percent of your clients.
+
+The design of experiments – This is the initial process you use in splitting your data, set up and a sample of data used for statistical analysis.
+
+    Explain the term series analysis.
+
+Answer: Series Analysis can be explained as:
+
+This is done in two domains – time domain and frequency domain. Time series analysis is when the output process is forecasted by analyzing data gotten previously using methods including log-linear regression, exponential smoothening, etc.ds_interview_questions1
+
+    Define clustering and list the properties for clustering algorithms.
+
+Answer: The definition of clustering and properties are:
+
+Clustering is known as classification method applied data. This divides data set into clusters and groups. The properties for clustering algorithms are: Disjunctive, Hard and soft, iterative, flat or hierarchical.
+
+Data Analytics Course by Digital Vidya
+
+Free Data Analytics Webinar
+Date: 18th Jan, 2018 (Thursday)
+Time: 3 PM to 4 PM (IST/GMT +5:30)
+
+    Mention a couple of statistical methods needed by a data analyst.
+
+Answer: Markov process, Mathematical optimization, Imputation techniques, Simplex Algorithm, Bayesian Method, Rank statistics spatial and cluster processes.
+
+    Describe what an N-gram is.
+
+Answer: This is a sequence of n items from a set of speech or text. It can be said to be a probabilistic language model used to predict the next item in that particular sequence taking the form of a(n-1).
+
+    Explain imputation and list the different imputation techniques.
+
+Answer: Imputation is used to replace data that is missing with substituted values. There are different types of imputation:
+
+Hot deck imputation – From a random selection, a missing value can be imputed using a punch card.
+
+Cold-deck imputation – works similarly to the hot deck imputation but a little more advanced and chooses donors from other datasets.
+
+Regression imputation – this involves replacing values that are missing using predicted values of a certain value depending on other variables.
+
+Mean imputation – This involves taking the values that are missing and replacing it with predicted values of other variables.
+
+Stochastic regression – This is similar to regression imputation but it includes the average regression variance to the regression imputation.
+
+    Define hash table collisions and explain how it is avoided.
+
+Hash Table collisions can be defined as follows with how it could also be avoided:
+
+Hash table collision takes place when two keys of different background hash to similar value. Two data are not kept within the same slot.
+
+In order to avoid a hash table collision, there are a lot of techniques. Below are two techniques:
+
+Separate Chaining: This makes use of data structure for storing multiple items hashing to the same particular spot.
+
+Open Addressing: This looks for other slots by using another function and keeps items in the initial empty lot that is discovered.
+
+    What are the criteria for a good data model?
+
+The criteria for a good data model are listed below:
+
+    A good data model can be consumed easily.
+    It produces a performance that is predictable.
+    It can adapt to any changes in its requirements.
+    Massive changes in data for a good model must be scalable.
+
+You have seen a lot of answers to the data analytics interview questions that are likely encountered in most interviews. If you are a qualified data analyst, you might want to go through all the questions listed above and do some search on other questions on your own.
+
+There are various interview questions on data analytics for various people of different years of experience but it is advisable to understand as many questions as possible. You can learn data analytics interview questions for freshers and data analytics interview questions for experienced persons to increase the chances of getting that dream job!

@@ -16,6 +16,7 @@ import gc
 IDIR = '../input/'
 
 
+#data load 
 print('loading prior')
 priors = pd.read_csv(IDIR + 'order_products__prior.csv')
 print('loading train')
@@ -25,12 +26,15 @@ orders = pd.read_csv(IDIR + 'orders.csv')
 print('loading products')
 products = pd.read_csv(IDIR + 'products.csv')
 
+#display :datasets shape and columns display
 print('priors {}: {}'.format(priors.shape, ', '.join(priors.columns)))
 print('orders {}: {}'.format(orders.shape, ', '.join(orders.columns)))
 print('train {}: {}'.format(train.shape, ', '.join(train.columns)))
 
 ###
 # some memory measures for kaggle kernel
+
+#data type casting
 print('optimize memory')
 orders.order_dow = orders.order_dow.astype(np.int8)
 orders.order_hour_of_day = orders.order_hour_of_day.astype(np.int8)
